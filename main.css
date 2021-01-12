@@ -398,7 +398,7 @@ a:link {
   }
 
   #wall {
-    display: none;
+    width: 252px;
   }
 
   #work {
