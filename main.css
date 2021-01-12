@@ -141,8 +141,8 @@ h6 {
 
 #windowsill {
   position: relative;
-  height: 268px;
-  padding-top: 18px;
+  height: 254.5px;
+  padding-top: 9px;
 }
 
 .item {
@@ -151,40 +151,40 @@ h6 {
 
 #window {
   box-sizing: border-box;
-  width: 252px;
+  width: 100%;
   padding: 36px 18px 0px 18px;
 }
 
 #sun {
-  width: 195px;
-  top: 80px;
-  left: 40px;
+  width: 75%;
+  top: 30%;
+  left: 18%;
 }
 
 #avo {
-  width: 52px;
-  top: 119px;
-  left: 40px;
+  width: 20%;
+  top: 44%;
+  left: 15%;
   z-index: 10;
 }
 
 #tum {
-  width: 58px;
-  top: 147px;
-  left: 80px;
+  width: 21%;
+  top: 57%;
+  left: 31%;
   z-index: 10;
 }
 
 #pothos {
-  width: 99px;
-  top: 10px;
-  left: 145px;
+  width: 40%;
+  top: 2%;
+  left: 58%;
   z-index: 10;
 }
 
 #description-box {
   height: 190px;
-  width: 252px;
+  width: 100%;
 }
 
 #poly {
