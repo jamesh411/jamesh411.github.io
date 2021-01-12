@@ -398,10 +398,12 @@ a:link {
   }
 
   #wall {
-    width: 252px;
+    display: none;
   }
 
   #work {
+    justify-content: center;
+    align-items: center;
   }
 
   h3 {
