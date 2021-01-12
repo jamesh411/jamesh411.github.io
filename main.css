@@ -50,7 +50,7 @@ table {
 /* END RESET */
 
 body {
-  --bodyfont: "jost";
+  --bodyfont: "Jost", sans-serif;
   --bloo: #8fb5bf;
   --gray: #444444;
   --gray2: #555555;
@@ -63,7 +63,9 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon grotesque black";
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 800 !important;
+  font-style: normal;
 }
 
 h1 {
@@ -212,8 +214,9 @@ a:link {
 }
 
 .nav {
-  font-family: "brandon grotesque";
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 600;
+  font-style: normal;
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--gray);
