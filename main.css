@@ -389,6 +389,8 @@ a:link {
 @media only screen and (max-device-width: 500px) {
   #layout {
     width: 90%;
+    justify-content: center;
+    align-items: center;
   }
 
   #sidebar {
