@@ -1,0 +1,383 @@
+/* RESET
+   http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET */
+
+body {
+  --bodyfont: "jost";
+  --bloo: #8fb5bf;
+  --gray: #444444;
+  --gray2: #555555;
+  --yello: #f4d076;
+}
+
+p {
+  font-family: var(--bodyfont);
+  color: var(--gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "brandon grotesque black";
+}
+
+h1 {
+  color: var(--yello);
+  letter-spacing: 3px;
+  line-height: 110% !important;
+  margin-bottom: 0px !important;
+}
+
+h3 {
+  letter-spacing: 2px;
+  color: var(--gray)
+}
+
+h6 {
+  letter-spacing: 1px;
+  color: var(--gray)
+}
+
+#layout::-webkit-scrollbar {
+  width: 5px;
+}
+
+#layout::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#layout::-webkit-scrollbar-thumb {
+  background: #8fb5bf;
+}
+
+::selection {
+  background: var(--yello);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  box-sizing: border-box;
+  margin: 18px;
+}
+
+#layout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  overflow-y: scroll;
+
+  height: 90%;
+  width: 65%;
+
+  padding: 18px;
+  /*border: 2px solid red;*/
+  margin: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#sidebar {
+  flex: 0 0 252px;
+  position: sticky;
+  top: 18px;
+  width: 252px;
+  height: fit-content;
+  z-index: 10;
+}
+
+#windowsill {
+  position: relative;
+  height: 268px;
+  padding-top: 18px;
+}
+
+.item {
+  position: absolute;
+}
+
+#window {
+  box-sizing: border-box;
+  width: 252px;
+  padding: 36px 18px 0px 18px;
+}
+
+#sun {
+  width: 195px;
+  top: 80px;
+  left: 40px;
+}
+
+#avo {
+  width: 52px;
+  top: 119px;
+  left: 40px;
+  z-index: 10;
+}
+
+#tum {
+  width: 58px;
+  top: 147px;
+  left: 80px;
+  z-index: 10;
+}
+
+#pothos {
+  width: 99px;
+  top: 10px;
+  left: 145px;
+  z-index: 10;
+}
+
+#description-box {
+  height: 190px;
+  width: 252px;
+}
+
+#poly {
+  stroke: var(--bloo);
+  stroke-width: 2px;
+  fill: none;
+}
+
+#description {
+  font-size: 13px;
+  line-height: 16px;
+  box-sizing: border-box;
+  padding: 30px;
+  /*border: 2px solid var(--bloo);*/
+  margin-bottom: 0 !important;
+}
+
+#navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 18px;
+  height: 56px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nav {
+  font-family: "brandon grotesque";
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--gray);
+  transition: height 0.15s, border-bottom 0.15s, margin-top 0.15s;
+}
+
+.nav:hover {
+  color: var(--gray);
+  height: 21px;
+  border-bottom: 3px solid var(--yello);
+  margin-top: -2px;
+}
+
+#myroom {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 0;
+  width: 440px;
+}
+
+#wall {
+  box-sizing: content-box;
+  position: relative;
+  height: max-content;
+  width: 100%;
+  min-width: 252px;
+  max-width: 540px;
+}
+
+#room {
+  width: 100%;
+}
+
+#bottle {
+  width: 12%;
+  top: 63%;
+  left: -3%;
+  z-index: 20;
+  animation: visible 1s 1;
+}
+
+#taekwondo {
+  width: 3%;
+  height: 8%;
+  top: 48%;
+  left: 6%;
+}
+
+#polaroids {
+  width: 65%;
+  height: 8%;
+  top: 17%;
+  left: 10%;
+}
+
+#ethical {
+  width: 10%;
+  height: 16%;
+  top: 33%;
+  left: 12%;
+}
+
+#record {
+  width: 11%;
+  height: 9%;
+  top: 51.5%;
+  left: 13%;
+}
+
+#skunk {
+  width: 11%;
+  height: 4%;
+  top: 29%;
+  left: 33%;
+}
+
+#comic {
+  width: 10%;
+  height: 3.5%;
+  top: 35.5%;
+  left: 28.5%;
+}
+
+#pic {
+  width: 9%;
+  height: 12%;
+  top: 43%;
+  left: 27%;
+}
+
+#cal {
+  width: 8%;
+  height: 5%;
+  top: 58%;
+  left: 27%;
+}
+
+#epi {
+  width: 5%;
+  height: 11%;
+  top: 38%;
+  left: 39%;
+}
+
+#map {
+  width: 12%;
+  height: 16%;
+  top: 32%;
+  left: 47%;
+}
+
+#jam {
+  width: 12%;
+  height: 22%;
+  top: 53%;
+  left: 42%;
+}
+
+#jam:hover {
+  cursor: pointer;
+}
+
+#lappy {
+  width: 15%;
+  height: 10%;
+  top: 75%;
+  left: 36%;
+}
+
+#backpack {
+  width: 14%;
+  height: 18%;
+  top: 70%;
+  left: 57%;
+}
+
+#mangosteen {
+  width: 7%;
+  height: 5%;
+  top: 83%;
+  left: 68%;
+}
+
+#work {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 0;
+}
+
+#gallery {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 0;
+  height: auto;
+}
+
+#sidebar2 {
+  height: 200px;
+  width: 252px;
+  border: 2px solid var(--bloo);
+}
+
+@media only screen and (max-width: 949px) {
+  #sidebar {
+    position: static;
+  }
+}
