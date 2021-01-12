@@ -398,14 +398,17 @@ a:link {
 
   #wall {
     width: 252px;
+    justify-content: center;
   }
 
   #work {
     width: 252px;
+    justify-content: center;
   }
 
   #gallery {
     width: 252px;
+    justify-content: center;
   }
 
   #navigation {
