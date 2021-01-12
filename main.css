@@ -389,7 +389,6 @@ a:link {
 @media only screen and (max-device-width: 500px) {
   #layout {
     width: 90%;
-    justify-content: center;
   }
 
   #sidebar {
@@ -397,18 +396,14 @@ a:link {
   }
 
   #wall {
-    width: 252px;
-    justify-content: center;
   }
 
   #work {
-    width: 252px;
-    justify-content: center;
   }
 
   #gallery {
-    width: 252px;
     justify-content: center;
+    align-items: center;
   }
 
   #navigation {
