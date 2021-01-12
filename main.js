@@ -63,4 +63,12 @@ $(document).ready(function() {
     $("#pothos").draggable();
   } );
 
+  $(document).ready(function(){
+   if (window.location.hash == "#work") {
+     $('html, body').animate({
+        scrollTop: $("#moreInfo").offset().top
+      }, 600);
+   }
+});
+
 });

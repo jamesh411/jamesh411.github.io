@@ -210,6 +210,10 @@ h6 {
   height: 56px;
 }
 
+.mobile {
+  display: none !important;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -395,6 +399,14 @@ a:link {
 
   #sidebar {
     position: static;
+  }
+
+  .notmobile {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
   }
 
   #wall {
