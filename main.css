@@ -398,9 +398,13 @@ a:link {
   }
 
   #wall {
+    width: 252px;
   }
 
   #work {
+  }
+
+  h3 {
     width: 252px;
   }
 
