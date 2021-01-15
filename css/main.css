@@ -60,8 +60,8 @@ body {
 p {
   font-family: var(--bodyfont);
   color: var(--gray);
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -189,7 +189,7 @@ h6 {
 }
 
 #description-box {
-  height: 190px;
+  height: 189px;
   width: 100%;
 }
 
@@ -200,7 +200,7 @@ h6 {
 }
 
 #description {
-  padding: 28px;
+  padding: 25px;
 }
 
 #navigation {
@@ -377,10 +377,8 @@ a:link {
   height: 300px;
 }
 
-#sidebar2 {
-  height: 200px;
+.cover {
   width: 252px;
-  border: 2px solid var(--bloo);
 }
 
 #me {
@@ -399,6 +397,11 @@ a:link {
 
 .right {
   text-align: right;
+}
+
+.card-title {
+  margin-top: 9px;
+  margin-bottom: 0px !important;
 }
 
 @media only screen and (max-width: 949px) {
