@@ -83,6 +83,7 @@ h3 {
 }
 
 h6 {
+  font-weight: 600 !important;
   letter-spacing: 1px;
   color: var(--gray)
 }
@@ -200,8 +201,6 @@ h6 {
 
 #description {
   padding: 28px;
-  /*border: 2px solid var(--bloo);*/
-  margin-bottom: 0 !important;
 }
 
 #navigation {
@@ -240,7 +239,6 @@ a:link {
 #myroom {
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 0;
   width: 440px;
 }
 
@@ -367,16 +365,14 @@ a:link {
   left: 68%;
 }
 
-#page {
+.page {
   display: flex;
   flex-flow: column wrap;
-  flex: 1 1 0;
 }
 
-#gallery {
+.gallery {
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 0;
   height: auto;
   height: 300px;
 }
@@ -394,7 +390,15 @@ a:link {
 }
 
 #about_text {
+  height: fit-content;
+}
+
+.shrink {
   flex: 1 1 0;
+}
+
+.right {
+  text-align: right;
 }
 
 @media only screen and (max-width: 949px) {
@@ -462,4 +466,5 @@ a:link {
   #about_text {
     width: 252px;
   }
+
 }
