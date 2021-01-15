@@ -60,6 +60,8 @@ body {
 p {
   font-family: var(--bodyfont);
   color: var(--gray);
+  font-size: 13px;
+  line-height: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,15 +87,15 @@ h6 {
   color: var(--gray)
 }
 
-#layout::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   width: 5px;
 }
 
-#layout::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-#layout::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background: #8fb5bf;
 }
 
@@ -114,7 +116,6 @@ h6 {
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
-  overflow-y: scroll;
 
   height: 90%;
   width: 65%;
@@ -127,6 +128,10 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.scroll {
+    overflow-y: scroll;
 }
 
 #sidebar {
@@ -194,10 +199,7 @@ h6 {
 }
 
 #description {
-  font-size: 13px;
-  line-height: 16px;
-  box-sizing: border-box;
-  padding: 30px;
+  padding: 28px;
   /*border: 2px solid var(--bloo);*/
   margin-bottom: 0 !important;
 }
@@ -365,7 +367,7 @@ a:link {
   left: 68%;
 }
 
-#work {
+#page {
   display: flex;
   flex-flow: column wrap;
   flex: 1 1 0;
@@ -376,6 +378,7 @@ a:link {
   flex-flow: row wrap;
   flex: 1 1 0;
   height: auto;
+  height: 300px;
 }
 
 #sidebar2 {
@@ -384,7 +387,33 @@ a:link {
   border: 2px solid var(--bloo);
 }
 
+#me {
+  width: 252px;
+  height: 401px;
+  margin-top: 0;
+}
+
+#about_text {
+  flex: 1 1 0;
+}
+
 @media only screen and (max-width: 949px) {
+  #layout {
+    overflow-y: scroll;
+  }
+
+  #layout::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #layout::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  #layout:-webkit-scrollbar-thumb {
+    background: #8fb5bf;
+  }
+
   #sidebar {
     position: static;
   }
@@ -412,7 +441,7 @@ a:link {
   #wall {
   }
 
-  #work {
+  #page {
     justify-content: center;
     align-items: center;
   }
