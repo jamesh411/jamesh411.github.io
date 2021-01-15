@@ -458,4 +458,8 @@ a:link {
   #navigation {
     position: sticky;
   }
+
+  #about_text {
+    width: 252px;
+  }
 }
