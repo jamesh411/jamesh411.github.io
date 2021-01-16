@@ -116,9 +116,22 @@ p {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:link {
   text-decoration: none;
 }
+
+.extlink {
+  color: var(--bloo);
+  transition: 0.5s;
+  }
+
+  .extlink:hover {
+  color: var(--yello) !important;
+  }
 
 .box {
   margin: 18px;
