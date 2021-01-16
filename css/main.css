@@ -79,7 +79,7 @@ body {
   --yello: #f4d076;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 800 !important;
   font-style: normal;
@@ -93,14 +93,16 @@ h1 {
 }
 
 h3 {
+  color: var(--gray);
   letter-spacing: 2px;
-  color: var(--gray)
 }
 
 h6 {
+  color: var(--gray);
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 600 !important;
+  font-style: normal;
   letter-spacing: 1px;
-  color: var(--gray)
 }
 
 p {
@@ -128,6 +130,14 @@ a:link {
 
 .item {
   position: absolute;
+}
+
+.space {
+  padding-right: 10%;
+}
+
+.pic {
+  width: 100%;
 }
 
 .shrink {
@@ -484,6 +494,14 @@ a:link {
 
   #sidebar {
     position: static;
+  }
+
+  .pic {
+    width: 252px;
+  }
+
+  .space {
+    padding-right: 0 !important;
   }
 }
 
