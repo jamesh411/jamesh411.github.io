@@ -167,8 +167,6 @@ a:link {
 .gallery {
   display: flex;
   flex-flow: row wrap;
-  height: auto;
-  height: 300px;
 }
 
 /* END LAYOUT */
