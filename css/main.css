@@ -149,8 +149,12 @@ a:link {
   padding-right: 10%;
 }
 
-.pic {
+.fullpic {
   width: 100%;
+}
+
+.smallpic {
+  width: 33.33%;
 }
 
 .shrink {
@@ -450,6 +454,14 @@ a:link {
   margin-bottom: 0px !important;
 }
 
+.boxtop {
+  margin-top: 36px;
+}
+
+.boxbottom {
+  margin-bottom: 36px;
+}
+
 /* END WORK */
 /*----------------------------------------------------------------------------*/
 /* SMALL SCREEN */
@@ -473,6 +485,10 @@ a:link {
 
   #sidebar {
     position: static;
+  }
+
+  .smallpic {
+    width: 100%;
   }
 }
 
@@ -514,12 +530,12 @@ a:link {
     position: static;
   }
 
-  .pic {
+  .fullpic {
     width: 252px;
   }
 
-  .space {
-    padding-right: 0 !important;
+  .smallpic {
+    width: 252px;
   }
 }
 
