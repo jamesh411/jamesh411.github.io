@@ -153,6 +153,10 @@ a:link {
   width: 100%;
 }
 
+.halfpic {
+  width: 50%;
+}
+
 .smallpic {
   width: 33.33%;
 }
@@ -455,11 +459,11 @@ a:link {
 }
 
 .boxtop {
-  margin-top: 36px;
+  margin-top: 18px;
 }
 
 .boxbottom {
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 }
 
 /* END WORK */
@@ -485,6 +489,14 @@ a:link {
 
   #sidebar {
     position: static;
+  }
+
+  .fullpic {
+    width: 100%;
+  }
+
+  .halfpic {
+    width: 100%;
   }
 
   .smallpic {
@@ -531,6 +543,10 @@ a:link {
   }
 
   .fullpic {
+    width: 252px;
+  }
+
+  .halfpic {
     width: 252px;
   }
 
