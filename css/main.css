@@ -151,10 +151,12 @@ a:link {
 
 .fullpic {
   width: 100%;
+  min-width: 252px;
 }
 
 .halfpic {
   width: 50%;
+  min-width: 252px;
 }
 
 .smallpic {
@@ -468,9 +470,50 @@ a:link {
 
 /* END WORK */
 /*----------------------------------------------------------------------------*/
+
+@media only screen and (max-device-width: 1280px) {
+  #layout {
+    width: 71%;
+  }
+}
+
+@media only screen and (max-device-width: 1280px) and (max-width: 869px) {
+  #layout {
+    overflow-y: scroll;
+  }
+
+  #layout::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #layout::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  #layout:-webkit-scrollbar-thumb {
+    background: #8fb5bf;
+  }
+
+  #sidebar {
+    position: static;
+  }
+
+  .fullpic {
+    width: 100%;
+  }
+
+  .halfpic {
+    width: 100%;
+  }
+
+  .smallpic {
+    width: 100%;
+  }
+}
+
 /* SMALL SCREEN */
 
-@media only screen and (max-width: 949px) {
+@media only screen and (min-device-width: 1280px) and (max-width: 949px) {
   #layout {
     overflow-y: scroll;
   }
