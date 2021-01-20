@@ -151,12 +151,10 @@ a:link {
 
 .fullpic {
   width: 100%;
-  min-width: 252px;
 }
 
 .halfpic {
   width: 50%;
-  min-width: 252px;
 }
 
 .smallpic {
@@ -468,8 +466,20 @@ a:link {
   margin-bottom: 18px;
 }
 
+#prototype {
+  width: 100%;
+  height: 95vh;
+}
+
+#demo {
+  width: 252px;
+  padding-top: 18px;
+  margin: auto;
+}
+
 /* END WORK */
 /*----------------------------------------------------------------------------*/
+/* SMALL LAPTOP / SMALL WINDOW */
 
 @media only screen and (max-device-width: 1280px) {
   #layout {
@@ -509,9 +519,16 @@ a:link {
   .smallpic {
     width: 100%;
   }
+
+  #prototype {
+    width: 252px;
+    height: 600px;
+  }
 }
 
-/* SMALL SCREEN */
+/* END SMALL LAPTOP / SMALL WINDOW */
+/*----------------------------------------------------------------------------*/
+/* REGULAR LAPTOP SMALL WINDOW */
 
 @media only screen and (min-device-width: 1280px) and (max-width: 949px) {
   #layout {
@@ -545,9 +562,14 @@ a:link {
   .smallpic {
     width: 100%;
   }
+
+  #prototype {
+    width: 252px;
+    height: 600px;
+  }
 }
 
-/* END SMALL SCREEN */
+/* END REGULAR LAPTOP SMALL WINDOW */
 /*----------------------------------------------------------------------------*/
 /* MOBILE */
 
@@ -595,6 +617,11 @@ a:link {
 
   .smallpic {
     width: 252px;
+  }
+
+  #prototype {
+    width: 252px;
+    height: 600px;
   }
 }
 
