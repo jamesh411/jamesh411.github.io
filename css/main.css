@@ -105,11 +105,16 @@ h6 {
   letter-spacing: 1px;
 }
 
-p {
+p, ul, li {
   font-family: var(--bodyfont);
   color: var(--gray);
   font-size: 14px;
   line-height: 18px;
+}
+
+ul {
+  display: block;
+  width: 100%;
 }
 
 * {
@@ -159,6 +164,10 @@ a:link {
 
 .smallpic {
   width: 33.33%;
+}
+
+.fourthpic {
+  width: 25%;
 }
 
 .shrink {
@@ -516,6 +525,10 @@ a:link {
     width: 100%;
   }
 
+  .fourthpic {
+    width: 100%;
+  }
+
   .smallpic {
     width: 100%;
   }
@@ -556,6 +569,10 @@ a:link {
   }
 
   .halfpic {
+    width: 100%;
+  }
+
+  .fourthpic {
     width: 100%;
   }
 
@@ -612,6 +629,10 @@ a:link {
   }
 
   .halfpic {
+    width: 252px;
+  }
+
+  .fourthpic {
     width: 252px;
   }
 
