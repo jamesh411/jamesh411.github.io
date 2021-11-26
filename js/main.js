@@ -5,25 +5,29 @@ $(document).ready(function() {
   $('.popup').click(function(){
       image = $(this).clone();
       image.css("display", "none");
-      $("#layout").append(image);
+      $("body").append(image);
       if(window.innerHeight < window.innerWidth){
         if (image.width() > image.height()) {
           image.css("width", "50vw");
+          image.css("height", "auto");
         }
         else{
           image.css("height", "75vh");
+          image.css("width", "auto");
         }
       }
       else {
         if(image.width() >= image.height()){
           image.css("width", "80vw");
+          image.css("height", "auto");
         }
         else{
           image.css("height", "75vh");
+          image.css("width", "auto");
         }
       }
       image.css({
-        "z-index": "1000",
+        "z-index": "10000",
         "display": "block",
         "position": "absolute",
         "top": "50%",

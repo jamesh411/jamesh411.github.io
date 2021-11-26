@@ -209,6 +209,31 @@ a:link {
   flex-flow: row wrap;
 }
 
+#holder {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 3%;
+}
+#music {
+  width: 100%;
+}
+
+#cover {
+  display: none;
+  width: 98%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  opacity: 0.6;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.popup {
+  cursor: pointer;
+}
+
 /* END LAYOUT */
 /*----------------------------------------------------------------------------*/
 /* SIDEBAR */
@@ -482,6 +507,12 @@ a:link {
 
 #demo {
   width: 252px;
+  padding-top: 18px;
+  margin: auto;
+}
+
+#demo2 {
+  width: 100%;
   padding-top: 18px;
   margin: auto;
 }
