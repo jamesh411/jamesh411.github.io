@@ -234,6 +234,12 @@ a:link {
   cursor: pointer;
 }
 
+.grab {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
 /* END LAYOUT */
 /*----------------------------------------------------------------------------*/
 /* SIDEBAR */
