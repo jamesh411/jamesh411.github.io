@@ -298,13 +298,13 @@ a:link {
   width: 100%;
 }
 
-#poly {
+.poly {
   stroke: var(--bloo);
   stroke-width: 2px;
-  fill: none;
+  fill: white;
 }
 
-#description {
+.description {
   padding: 25px;
 }
 
@@ -354,6 +354,12 @@ a:link {
 
 #room {
   width: 100%;
+}
+
+#welcome {
+  width: 95%;
+  top: 1.5%;
+  left: 2%;
 }
 
 #bottle {
