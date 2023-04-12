@@ -76,3 +76,15 @@ $(document).ready(function() {
 });
 
 });
+
+function scaleElement() {
+  const container = document.querySelector('.solar');
+  const box = document.querySelector('#solar');
+  const containerWidth = container.offsetWidth;
+  const scaleFactor = (containerWidth - 20) / 800;
+  box.style.transform = `scale(${scaleFactor})`;
+}
+
+scaleElement();
+
+window.addEventListener('resize', scaleElement);
