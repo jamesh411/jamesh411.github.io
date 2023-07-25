@@ -749,6 +749,10 @@ a:link {
     position: static;
   }
 
+  .cover {
+    width: 252px;
+  }
+
   .fullpic {
     width: 252px;
   }
