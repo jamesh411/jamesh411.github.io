@@ -90,9 +90,11 @@ h1 {
   letter-spacing: 3px;
   line-height: 110% !important;
   margin-bottom: 0px !important;
+  text-align: right;
+  padding-right: 18px;
 }
 
-h3 {
+h2, h3 {
   color: var(--gray);
   letter-spacing: 2px;
 }
@@ -108,8 +110,8 @@ h6 {
 p, ul, li {
   font-family: var(--bodyfont);
   color: var(--gray);
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 ul {
@@ -187,8 +189,8 @@ a:link {
   flex-flow: row wrap;
   justify-content: left;
 
-  height: 90%;
-  width: 65%;
+  height: 95%;
+  width: 80%;
 
   padding: 18px;
   margin: 0;
@@ -317,22 +319,22 @@ a:link {
 
 #avo {
   width: 20%;
-  top: 44%;
-  left: 15%;
+  top: 35%;
+  left: 73%;
   z-index: 10;
 }
 
 #tum {
   width: 21%;
-  top: 57%;
-  left: 31%;
+  top: 53%;
+  left: 58%;
   z-index: 10;
 }
 
 #pothos {
   width: 40%;
-  top: 2%;
-  left: 58%;
+  top: 1%;
+  left: 2%;
   z-index: 10;
 }
 
@@ -349,9 +351,12 @@ a:link {
 
 .description {
   padding: 25px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 #navigation {
+  /*border: 2px solid var(--bloo);*/
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;

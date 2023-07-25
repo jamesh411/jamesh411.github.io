@@ -7,12 +7,12 @@ $(document).ready(function() {
       image.css("display", "none");
       $("body").append(image);
       if(window.innerHeight < window.innerWidth){
-        if (image.width() > image.height()) {
-          image.css("width", "50vw");
+        if (image.width()/image.height() < window.innerHeight/window.innerWidth) {
+          image.css("width", "90vw");
           image.css("height", "auto");
         }
         else{
-          image.css("height", "75vh");
+          image.css("height", "90vh");
           image.css("width", "auto");
         }
       }
