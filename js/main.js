@@ -7,7 +7,7 @@ $(document).ready(function() {
       image.css("display", "none");
       $("body").append(image);
       if(window.innerHeight < window.innerWidth){
-        if (image.width()/image.height() < window.innerHeight/window.innerWidth) {
+        if (image.width()/image.height() > window.innerWidth/window.innerHeight) {
           image.css("width", "90vw");
           image.css("height", "auto");
         }
@@ -17,12 +17,12 @@ $(document).ready(function() {
         }
       }
       else {
-        if(image.width() >= image.height()){
-          image.css("width", "80vw");
+        if(image.width()/image.height() >= window.innerWidth/window.innerHeight){
+          image.css("width", "85vw");
           image.css("height", "auto");
         }
         else{
-          image.css("height", "75vh");
+          image.css("height", "85vh");
           image.css("width", "auto");
         }
       }
