@@ -4,28 +4,43 @@ $(document).ready(function() {
 
   $('.popup').click(function(){
       image = $(this).clone();
+
+      iwidth = $(this).width();
+      iheight = $(this).height();
+      wwidth = window.innerWidth;
+      wheight = window.innerHeight;
+      console.log("IWIDTH: " + iwidth + "; IHEIGHT: " + iheight);
+      console.log("WWIDTH: " + wwidth + "; WHEIGHT: " + wheight);
+
       image.css("display", "none");
-      
-      if(window.innerHeight < window.innerWidth){
-        if (image.width()/image.height() > window.innerWidth/window.innerHeight) {
+
+      if(wheight < wwidth){
+        console.log('desktop');
+        if (iwidth/iheight > wwidth/wheight) {
+          console.log('image is wider than screen');
           image.css("width", "90vw");
           image.css("height", "auto");
         }
         else{
+          console.log('image is narrower than screen');
           image.css("height", "90vh");
           image.css("width", "auto");
         }
       }
       else {
-        if(image.width()/image.height() >= window.innerWidth/window.innerHeight){
+        console.log('mobile');
+        if(iwidth/iheight > wwidth/wheight){
+          console.log('image is wider than screen');
           image.css("width", "85vw");
           image.css("height", "auto");
         }
         else{
+          console.log('image is narrower than screen');
           image.css("height", "85vh");
           image.css("width", "auto");
         }
       }
+
       image.css({
         "z-index": "10000",
         "display": "block",
@@ -34,6 +49,7 @@ $(document).ready(function() {
         "left": "50%",
         "transform": "translate(-50%, -50%)"
       });
+      
       $("body").append(image);
       $("#cover").css("display", 'none').fadeIn("slow");
       image.css("display", 'none').fadeIn("slow");
