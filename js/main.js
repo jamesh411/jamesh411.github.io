@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.popup').click(function(){
       image = $(this).clone();
       image.css("display", "none");
-      $("body").append(image);
+      
       if(window.innerHeight < window.innerWidth){
         if (image.width()/image.height() > window.innerWidth/window.innerHeight) {
           image.css("width", "90vw");
@@ -34,6 +34,7 @@ $(document).ready(function() {
         "left": "50%",
         "transform": "translate(-50%, -50%)"
       });
+      $("body").append(image);
       $("#cover").css("display", 'none').fadeIn("slow");
       image.css("display", 'none').fadeIn("slow");
   });

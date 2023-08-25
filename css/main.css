@@ -97,6 +97,7 @@ h1 {
 h2, h3 {
   color: var(--gray);
   letter-spacing: 2px;
+  display: block;
 }
 
 h6 {
@@ -571,6 +572,7 @@ a:link {
 }
 
 #demo {
+  display: block;
   width: 252px;
   padding-top: 18px;
   margin: auto;
