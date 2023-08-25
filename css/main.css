@@ -677,9 +677,9 @@ a:link {
 */
 /* END SMALL LAPTOP / SMALL WINDOW */
 /*----------------------------------------------------------------------------*/
-/* REGULAR LAPTOP SMALL WINDOW */
+/* REGULAR LAPTOP MEDIUM WINDOW */
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (min-device-width: 1024px) and (max-width: 1140px) {
   #layout {
     overflow-y: scroll;
   }
@@ -721,7 +721,11 @@ a:link {
   }
 }
 
-@media only screen and (max-width: 770px) {
+/* END REGULAR LAPTOP / MEDIUM WINDOW */
+/*----------------------------------------------------------------------------*/
+/* REGULAR LAPTOP SMALL WINDOW */
+
+@media only screen and (min-device-width: 1024px) and (max-width: 770px) {
   #layout {
     overflow-y: scroll;
     justify-content: center;
@@ -766,6 +770,56 @@ a:link {
 
 /* END REGULAR LAPTOP SMALL WINDOW */
 /*----------------------------------------------------------------------------*/
+/* TABLET */
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+  h1, h2, h3, h4, h5, h6, p {
+
+  }
+
+  .notmobile {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  #layout {
+    width: 100%;
+    padding: 10%;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #sidebar {
+    flex: 0 0 0px;
+    position: static;
+  }
+
+  #me {
+    width: 100%;
+    height: auto;
+  }
+
+  .project, .cover, .fullpic, .halfpic, .smallpic, .fourthpic {
+    width: 100%;
+  }
+
+  #prototype {
+    width: 100%;
+    height: 600px;
+  }
+
+  #solar {
+    left: 0px;
+    width: 850px;
+    height: 638px;
+  }
+}
+
+/* END TABLET */
+/*----------------------------------------------------------------------------*/
 /* MOBILE */
 
 @media only screen and (max-device-width: 500px) {
@@ -784,7 +838,7 @@ a:link {
 
   #layout {
     width: 100%;
-    padding: 18px;
+    padding: 10%;
     justify-content: center;
     align-items: center;
   }
