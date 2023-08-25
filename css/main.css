@@ -616,16 +616,14 @@ a:link {
 /* END WORK */
 /*----------------------------------------------------------------------------*/
 /* SMALL LAPTOP / SMALL WINDOW */
-
-@media only screen and (max-device-width: 1280px) {
-  #layout {
-    width: 71%;
-  }
-}
-
+/*
 @media only screen and (max-device-width: 1280px) and (max-width: 869px) {
   #layout {
     overflow-y: scroll;
+    width: 100%;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
   }
 
   #layout::-webkit-scrollbar {
@@ -642,6 +640,17 @@ a:link {
 
   #sidebar {
     position: static;
+  }
+
+  .project {
+    width: 100%;
+    min-width: 252px;
+  }
+
+  #me {
+    width: 100%;
+    min-width: 252px;
+    height: auto;
   }
 
   .fullpic {
@@ -661,18 +670,62 @@ a:link {
   }
 
   #prototype {
-    width: 252px;
+    width: 100%;
     height: 600px;
   }
 }
-
+*/
 /* END SMALL LAPTOP / SMALL WINDOW */
 /*----------------------------------------------------------------------------*/
 /* REGULAR LAPTOP SMALL WINDOW */
 
-@media only screen and (min-device-width: 1280px) and (max-width: 949px) {
+@media only screen and (max-width: 1140px) {
   #layout {
     overflow-y: scroll;
+  }
+
+  #layout::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #layout::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  #layout:-webkit-scrollbar-thumb {
+    background: #8fb5bf;
+  }
+
+  #sidebar {
+
+  }
+
+  .project {
+    width: 100%;
+    min-width: 252px;
+  }
+
+  #me {
+    width: 100%;
+    min-width: 252px;
+    height: auto;
+  }
+
+  .fullpic, .halfpic, .smallpic, .fourthpic {
+    width: 100%;
+  }
+
+  #prototype {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #layout {
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
   }
 
   #layout::-webkit-scrollbar {
@@ -691,25 +744,23 @@ a:link {
     position: static;
   }
 
-  .fullpic {
+  .project {
     width: 100%;
+    min-width: 252px;
   }
 
-  .halfpic {
+  #me {
     width: 100%;
+    min-width: 252px;
+    height: auto;
   }
 
-  .fourthpic {
-    width: 100%;
-  }
-
-  .smallpic {
+  .fullpic, .halfpic, .smallpic, .fourthpic {
     width: 100%;
   }
 
   #prototype {
-    width: 252px;
-    height: 600px;
+    width: 100%;
   }
 }
 
@@ -719,7 +770,7 @@ a:link {
 
 @media only screen and (max-device-width: 500px) {
   h1, h2, h3, h4, h5, h6, p {
-    width: 252px;
+    width: 100%;
     margin: auto;
   }
 
@@ -732,7 +783,8 @@ a:link {
   }
 
   #layout {
-    width: 90%;
+    width: 100%;
+    padding: 18px;
     justify-content: center;
     align-items: center;
   }
@@ -751,29 +803,31 @@ a:link {
     position: static;
   }
 
-  .cover {
-    width: 252px;
+  .box {
+    width: 100%;
+    margin: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
-  .fullpic {
-    width: 252px;
+  #me {
+    width: 100%;
+    height: auto;
   }
 
-  .halfpic {
-    width: 252px;
-  }
-
-  .fourthpic {
-    width: 252px;
-  }
-
-  .smallpic {
-    width: 252px;
+  .project, .cover, .fullpic, .halfpic, .smallpic, .fourthpic {
+    width: 100%;
   }
 
   #prototype {
-    width: 252px;
+    width: 100%;
     height: 600px;
+  }
+
+  #solar {
+    left: 0px;
+    width: 850px;
+    height: 638px;
   }
 }
 
