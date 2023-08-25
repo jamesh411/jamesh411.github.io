@@ -79,6 +79,10 @@ body {
   --yello: #f4d076;
 }
 
+i {
+  font-style: italic;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 800 !important;
