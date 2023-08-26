@@ -105,10 +105,3 @@ function scaleElement() {
 scaleElement();
 
 window.addEventListener('resize', scaleElement);
-
-$(function() {
-  $('.fullpic').Lazy();
-  $('.halfpic').Lazy();
-  $('.fourthpic').Lazy();
-  $('.small').Lazy();
-});
