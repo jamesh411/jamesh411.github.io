@@ -31,12 +31,12 @@ $(document).ready(function() {
         console.log('mobile');
         if(iwidth/iheight > wwidth/wheight){
           console.log('image is wider than screen');
-          image.css("width", "85vw");
+          image.css("width", "90vw");
           image.css("height", "auto");
         }
         else{
           console.log('image is narrower than screen');
-          image.css("height", "85vh");
+          image.css("height", "90vh");
           image.css("width", "auto");
         }
       }
