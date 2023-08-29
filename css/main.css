@@ -539,6 +539,15 @@ a:link {
   height: fit-content;
 }
 
+.contact {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--bloo);
+}
+
 /* END ME */
 /*----------------------------------------------------------------------------*/
 /* WORK */
