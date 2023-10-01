@@ -72,7 +72,7 @@ table {
 /* LAYOUT */
 
 body {
-  --bodyfont: "Jost", sans-serif;
+  --bodyfont: "Outfit", sans-serif;
   --bloo: #8fb5bf;
   --gray: #444444;
   --gray2: #555555;
@@ -356,7 +356,7 @@ a:link {
 
 .description {
   padding: 25px;
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 18px;
 }
 
