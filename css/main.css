@@ -584,6 +584,18 @@ a:link {
   height: 95vh;
 }
 
+.prototype2 {
+  height: 95vh;
+}
+
+.centerpiece {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 #demo {
   display: block;
   width: 252px;
