@@ -189,7 +189,7 @@ a:link {
   display: none !important;
 }
 
-#layout {
+.layout {
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
@@ -253,23 +253,25 @@ a:link {
 
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,3%,0)
+        transform: translate3d(0,3%,0);
+
     }
 
     to {
         transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,3%,0)
+        transform: translate3d(0,3%,0);
+
     }
 
     to {
         transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -281,7 +283,7 @@ a:link {
 }
 
 .animatedFadeInUp {
-    opacity: 0
+    opacity: 0;
 }
 
 .fadeInUp {
@@ -294,7 +296,7 @@ a:link {
 /*----------------------------------------------------------------------------*/
 /* SIDEBAR */
 
-#sidebar {
+.sidebar {
   flex: 0 0 252px;
   position: -webkit-sticky;
   position: sticky;
@@ -304,7 +306,7 @@ a:link {
   z-index: 10;
 }
 
-#windowsill {
+.windowsill {
   position: relative;
   height: 254.5px;
   padding-top: 9px;
@@ -343,7 +345,7 @@ a:link {
   z-index: 10;
 }
 
-#description-box {
+.description-box {
   height: 189px;
   width: 100%;
 }
@@ -360,7 +362,7 @@ a:link {
   line-height: 18px;
 }
 
-#navigation {
+.navigation {
   /*border: 2px solid var(--bloo);*/
   display: flex;
   flex-flow: row wrap;
@@ -643,7 +645,7 @@ a:link {
 /* SMALL LAPTOP / SMALL WINDOW */
 /*
 @media only screen and (max-device-width: 1280px) and (max-width: 869px) {
-  #layout {
+  .layout {
     overflow-y: scroll;
     width: 100%;
     padding: 18px;
@@ -651,19 +653,19 @@ a:link {
     align-items: center;
   }
 
-  #layout::-webkit-scrollbar {
+  .layout::-webkit-scrollbar {
     width: 5px;
   }
 
-  #layout::-webkit-scrollbar-track {
+  .layout::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  #layout:-webkit-scrollbar-thumb {
+  .layout:-webkit-scrollbar-thumb {
     background: #8fb5bf;
   }
 
-  #sidebar {
+  .sidebar {
     position: static;
   }
 
@@ -705,23 +707,23 @@ a:link {
 /* REGULAR LAPTOP MEDIUM WINDOW */
 
 @media only screen and (min-device-width: 1024px) and (max-width: 1140px) {
-  #layout {
+  .layout {
     overflow-y: scroll;
   }
 
-  #layout::-webkit-scrollbar {
+  .layout::-webkit-scrollbar {
     width: 5px;
   }
 
-  #layout::-webkit-scrollbar-track {
+  .layout::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  #layout:-webkit-scrollbar-thumb {
+  .layout:-webkit-scrollbar-thumb {
     background: #8fb5bf;
   }
 
-  #sidebar {
+  .sidebar {
 
   }
 
@@ -751,25 +753,25 @@ a:link {
 /* REGULAR LAPTOP SMALL WINDOW */
 
 @media only screen and (min-device-width: 1024px) and (max-width: 770px) {
-  #layout {
+  .layout {
     overflow-y: scroll;
     justify-content: center;
     align-items: center;
   }
 
-  #layout::-webkit-scrollbar {
+  .layout::-webkit-scrollbar {
     width: 5px;
   }
 
-  #layout::-webkit-scrollbar-track {
+  .layout::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  #layout:-webkit-scrollbar-thumb {
+  .layout:-webkit-scrollbar-thumb {
     background: #8fb5bf;
   }
 
-  #sidebar {
+  .sidebar {
     position: static;
   }
 
@@ -810,14 +812,14 @@ a:link {
     display: block !important;
   }
 
-  #layout {
+  .layout {
     width: 100%;
     padding: 10%;
     flex-flow: column;
     align-items: center;
   }
 
-  #sidebar {
+  .sidebar {
     flex: 0 0 0px;
     position: static;
   }
@@ -861,7 +863,7 @@ a:link {
     display: block !important;
   }
 
-  #layout {
+  .layout {
     width: 100%;
     padding: 10%;
     justify-content: center;
@@ -878,7 +880,7 @@ a:link {
     align-items: center;
   }
 
-  #sidebar {
+  .sidebar {
     position: static;
   }
 
