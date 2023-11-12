@@ -362,7 +362,7 @@ a:link {
   line-height: 18px;
 }
 
-.navigation {
+#navigation {
   /*border: 2px solid var(--bloo);*/
   display: flex;
   flex-flow: row wrap;
